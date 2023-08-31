@@ -5,6 +5,7 @@ interface TimeProps {
 }
 
 export default function Time({ date: dateStr }: TimeProps) {
+  console.log(dateStr);
   const date = new Date(`${dateStr}Z`);
 
   if (differenceInDays(new Date(), date) > 6) {
